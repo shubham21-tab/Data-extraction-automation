@@ -1,0 +1,971 @@
+
+
+--- PAGE 1 ---
+
+RESEA RCH ARTICL E
+Early cost-utility analysis of hepatitis C virus
+testing for emergency department attendees
+in France
+Nicolas Noiriel
+ID
+1
+, Jack Williams
+ID
+2
+*
+1 London School of Hygiene & Tropical Medicine, London , England, United Kingdom, 2 Department of
+Health Service Resea rch and Policy, London School of Hygiene & Tropical Medicine, London, England,
+United Kingdom
+* jack.wil liams@lsht m.ac.uk
+Abstract
+Testing for hepatitis C virus (HCV) is currently targeted towards those at high-risk in France.
+While universal screening was recently rejected, a growing body of research from other
+high-income countries suggests that HCV testing in emergency departments (ED) can be
+effective and cost-effective. In the absence of any studies on the effectiveness of HCV test-
+ing in ED attendees in France, this study aimed to perform an early economic evaluation of
+ED-based HCV testing. A Markov model was developed to simulate HCV testing in the ED
+versus no ED testing. The model captured costs from a French health service perspective,
+presented in 2020 euros, and outcomes, presented as quality-adjusted life years (QALYs),
+over a lifetime horizon. Incremental cost-effectiveness ratios (ICER) were calculated as
+costs per QALYs gained and compared to willingness -to-pay thresholds of €18,592 and
+€33,817 per QALY. Value of information analyses were also performed. ED testing for HCV
+was cost-effective at both thresholds when assuming ED prevalence of 1.1%, yielding an
+ICER of €3,800 per QALY. Testing remained cost-effective when the HCV prevalence
+amongst ED attendees remained higher than in the general population (0.3%). The maxi-
+mum value of future research ranged from €10 to €79 million, depending on time horizons
+and willingness -to-pay thresholds. Our analysis suggests ED-based HCV testing may be
+cost-effective in France, although there is uncertainty due to the lack of empirical studies
+available. Further research is of high value, suggesting seroprevalence surveys and pilot
+studies in French ED settings are warranted.
+Introduction
+Context
+The prevalence of hepatitis C virus (HCV) in France is low, with an estimated 133,500 people
+chronically infected in 2016 (0.3% of the general population aged 18 to 75 years) [1]. Still, it
+remains a public health issue in the country, with marginalized and stigmatized populations
+disproportionately affected [2–4], and an estimated 26,000 people remain unreached by cur-
+rent screening strategies [1].
+PLOS GLOB AL PUBLIC  HEALTH
+PLOS Global Public Health | https:/ /doi.org/10.13 71/journal.p gph.000 1559 February 23, 2023 1 / 19
+a1111111111
+a1111111111
+a1111111111
+a1111111111
+a1111111111
+OPEN ACCESS
+Citation: Noiriel N, Williams J (2023) Early cost-
+utility analysis of hepatitis C virus testing for
+emergency departmen t attendees in France. PLOS
+Glob Public Health 3(2): e0001559. https://doi.o rg/
+10.1371/ journal.pgph.00 01559
+Editor: Malaisamy Muniyand i, ICMR-Natio nal
+Institute for Research in Tuberculo sis: National
+Institute of Researc h in Tuberculosis , INDIA
+Received: September 16, 2022
+Accepted: January 13, 2023
+Published: February 23, 2023
+Copyright: © 2023 Noiriel, Williams. This is an
+open access article distributed under the terms of
+the Creative Commons Attributio n License, which
+permits unrestricte d use, distribu tion, and
+reproduction in any medium, provided the original
+author and source are credited.
+Data Availabilit y Statement: All data used to
+paramete rize the econom ic model are reported
+within this manuscript and are therefore freely
+available to other researchers.
+Funding: The authors received no specific funding
+for this work.
+Competing interests : The authors have declared
+that no competing interests exist.
+
+--- PAGE 2 ---
+
+Like in most high-income countries, HCV screening in France is targeted to people most at
+risk of infection [5]. However, the current HCV testing levels are insufficient to achieve World
+Health Organisation (WHO) targets to eliminate hepatitis C as a public health threat by 2030.
+These include a 90% and 65% reduction in respectively new cases of chronic HCV infections
+and HCV deaths by 2030, to which France has subscribed [6].
+The limited success of current HCV testing strategies alongside the advent of low cost direct
+acting antiviral treatments (DAA) [6] provides scope for policy discussion and new research
+on alternative testing strategies. Despite evidence of the cost-effectiveness of universal screen-
+ing in France [7, 8], the ‘Haute autorite ´ de sante ´ ’ (HAS), the French scientific authority in
+charge of health technology assessment and public health recommendations , decided in 2019
+to reject universal screening due to the lack of robust evidence and concerns around the feasi-
+bility of universal testing following HIV screening experiences [9]. Instead, they recommended
+maintaining a risk-based approach and intensifying screening in populations at increased risk,
+with further evaluations to identify prerequisites for better detection in those populations [10].
+Study rationale
+A growing body of research from high-income countries suggests that testing people visiting
+emergency departments (ED) for HCV could help to identify and treat those with undiagnosed
+infections. Evidence shows that ED testing can be effective, feasible and acceptable to both
+patients and the healthcare workers [11–16]. Also, testing for HCV in ED patients was found
+to be cost-effective by recent model-based evaluations in the UK [17, 18], and in the US and
+Canada [19]. A large randomised controlled trial of ED testing has recently been announced in
+the US, with the aim of identifying the effectiveness of risk-based (targeted) testing versus uni-
+versal (non-targeted) testing for HCV. This study will also include a cost-effectiveness analysis
+[20].
+Whilst ED testing studies are available from other countries, there are no recent studies in
+France, meaning that the HCV prevalence in ED’s is uncertain. One French study from 1996
+found that the HCV prevalence in the ED was higher than in the general population [21]. This
+relationship is common, with higher HCV prevalence found in ED’s in the US, Canada, UK,
+Ireland, and Germany [22].
+This is likely because populations at high risk of infection (e.g. injecting drug users,
+migrants and homeless people) are more likely to attend ED’s, and may not engage with other
+services where HCV screening is performed. However, ED testing also captures those without
+risk factors who are unlikely to be tested otherwise. In US seroprevalence studies up to 31%
+people testing positive for HCV in ED’s were found to have no prior known or reported risk
+factor, hence the rationale for an ongoing US study to compare targeted versus non-targeted
+approaches to testing [20, 23–25].
+In the absence of ED-specific HCV prevalence data, this analysis aimed to assess under
+which circumstances testing for HCV in ED settings might be cost-effective in France. The
+analysis also seeks to identify which parameters have the most influence upon the cost-effec-
+tiveness and to estimate the value of further research, by drawing on a value of information
+(VOI) framework. The VOI approach estimates maximum amount of money that might be
+invested to eliminate uncertainty in the cost-effectiveness decision, by assessing the probability
+of making the wrong decision (i.e. funding an intervention that is not cost-effective) and com-
+bining this with the opportunity cost associated with this decision (i.e. the value of the health
+that could have been gained if these resources had been allocated elsewhere). The results are
+expressed in monetary value as the expected value of perfect information (EVPI), and any
+study with costs exceeding the EVPI should not be considered a worthwhile investment.
+PLOS GLOB AL PUBLIC  HEALTH
+Cost-utility of hepatitis C testing in emergenc y departme nts in France
+PLOS Global Public Health | https:/ /doi.org/10.13 71/journal.p gph.000 1559 February 23, 2023 2 / 19
+
+--- PAGE 3 ---
+
+Methods
+Modelling approach
+A decision analytical model was built to compare the current risk-based HCV testing approach
+with and without the addition of an opt-out HCV test for ED attendees for whom blood is
+taken for routine clinical care. The model run over a lifetime horizon (50 years), with a one-
+year cycle length. A health service perspective was taken, with costs reported in 2020 euros (€).
+Health outcomes are reported as quality-adjusted life years (QALYs), a measure of health out-
+comes that combines both the length of life and health related quality of life over time. This
+can be estimated weighting the time spent in the different health states by the health-related
+quality of life estimate of each health state. In the base case scenario, costs and outcomes were
+discounted at the same rate of 2.5% during the first thirty years, then at a rate progressively
+reduced to 1.5%, as per the HAS guidelines [26].
+The model included adults aged 18 years or more presenting to the ED with no prior
+known diagnosis of HCV. They were assumed to be 48 years of age on average, based on data
+of ED attendees in France [27].
+Model structure
+A decision tree was combined with a Markov model to simulate both the costs and outcomes
+associated with the testing strategy in terms of number of infected individuals detected and
+engaged in treatment. A Markov model was used to capture the long-term effects of diagnosis
+and treatment of chronic hepatitis C (CHC), with treatment reducing disease progression and
+subsequent mortality and morbidity in the cohort.
+Decision tree. The decision tree consisted of two arms, describing screening strategies of
+interest (Fig 1).
+In the ED-based arm, individuals entered the decision tree as infected or uninfected, and
+were assumed to be offered testing if blood was taken as part of routine clinical care. Those
+who tested positive were offered treatment, with the possibility of achieving a sustained viro-
+logical response (SVR), equivalent to cure. Those infected who did not receive a test entered
+the Markov model as undiagnosed. Those who tested positive but did not engage in treatment
+entered the transition model as diagnosed but with no treatment, and were assumed to face
+the same risk of disease progression as those undiagnosed. It was assumed that opportunity to
+be tested in ED’s occurred only once in a lifetime, but individuals still had the opportunity to
+test elsewhere as part of the risk-based background testing.
+In the no ED testing arm, individuals entered the transition model either as uninfected, or
+as infected and undiagnosed, with an annual probability to be reached by background testing.
+Markov model & health states. The Markov model was comprised of eight different
+health states, reflecting the natural history of HCV (Fig 1). It was adapted from models used
+previously in economic evaluations on HCV testing strategies [8, 17, 19]. Patients who
+remained untreated were at risk of progressing to more severe fibrosis stages and eventually
+compensated cirrhosis (CC). Patients with CC were then at risk of developing advanced liver
+disease (decompensated cirrhosis–DC, or hepatocellular carcinoma—HCC). Patients with DC
+or HCC might eventually require liver transplant.
+Undiagnosed patients had an annual probability of receiving risk-based background test-
+ing, until they developed DC or more advanced liver damage, at which stage they were
+assumed to be aware of their status.
+All individuals in the model had a risk of all-cause mortality [28]. From CC stage onwards,
+patients were assumed to face an additional risk of death due to their liver conditions.
+PLOS GLOB AL PUBLIC  HEALTH
+Cost-utility of hepatitis C testing in emergenc y departme nts in France
+PLOS Global Public Health | https:/ /doi.org/10.13 71/journal.p gph.000 1559 February 23, 2023 3 / 19
+
+--- PAGE 4 ---
+
+Parameters
+ED prevalence. A targeted literature review was performed to identify data on the HCV
+prevalence in ED’s in high-income countries, and to what extent the HCV prevalence in ED’s
+exceeds that prevalence in the general population (S1 Text).
+Our targeted review identified 19 ED testing studies, with two from Germany, one from Ire-
+land, six from the UK and ten from the US. There were no studies identified from France.
+The HCV prevalence was found to be higher in ED attendees than in the general population
+in all but one study [29]. A prevalence ratio was calculated (ED prevalence divided by esti-
+mated general population prevalence), with a weighted average of 4.6 across all studies. The
+prevalence ratio was estimated to be 3.8 across European studies, which was used in the analy-
+sis. This prevalence ratio was multiplied by with the general population HCV prevalence of
+Fig 1. Model overview .
+�
+Individual s who are undiagnosed, untreated or who fail to achieve SVR after two treatm ent attempts . Dotted lines are indica tive of
+slower progress ion.
+https://do i.org/10.1371/j ournal.pgph .0001559.g001
+PLOS GLOB AL PUBLIC  HEALTH
+Cost-utility of hepatitis C testing in emergenc y departme nts in France
+PLOS Global Public Health | https:/ /doi.org/10.13 71/journal.p gph.000 1559 February 23, 2023 4 / 19
+
+--- PAGE 5 ---
+
+0.3% in France, to give an estimated ED prevalence of 1.1% [1]. The proportion of patients
+unaware of their status was assumed to be the same in ED attendees as in the general popula-
+tion (19.4%). Extensive sensitivity analyses were performed around these parameters given the
+uncertainty around them.
+Further intervention effects. In the absence of data from France, the proportion of ED
+attendees from whom blood was taken for clinical routine care was assumed to be 40%, based
+on studies from other high income countries [17, 30]. The testing acceptance rate was esti-
+mated at 79%, based on HCV testing data from France [2] (Table 1).
+It was assumed that 33% of patients tested in the ED would receive treatment, based on a
+UK study [17] and linkage to care values identified in the targeted literature review (ranging
+from 30% to 94%) [47–52]. For those detected through background testing, all were assumed
+to engage in care. Chance of being reached by background testing was estimated at a rate of
+6.2% derived from a French study on laboratories’ HCV and HBV testing activity [32]
+(Table 1).
+The distribution of fibrosis stages amongst those with HCV was derived from a previous
+French study [31] (Table 1). No stage beyond compensated cirrhosis (CC) was considered at
+presentation to ED, assuming that people with advanced liver disease would be aware of their
+status.
+Table 1. Model parameters .
+Parameters Mean value (SE) Distribut ion Reference
+Interventio n effects
+HCV RNA prevalence estimat es
+Prevalence in the French general population 0.3% (0.1%) Beta [1]
+Estimated prevalence ratio 3.8 (0.23) Log-norma l Assumpt ion based on targeted literature review
+Prevalence in the ED attendee population 1.1% Study calculations
+Proportion of undiagnosed cases 19.4% (13.1%) Beta [1]
+ED-specif ic prevalence estimat e of undiagnosed HCV 0.23% Study calculations
+Proportion of routinely requiring blood sample 40.0% (20%-60 %)
+†
+Uniform [17, 30]
+Testing acceptance rate 79.0% (50%-95 %)
+†
+Uniform [2]
+Proportion of patients tested effectivel y engaged in care 33.0% (10.2%) Beta [17]
+Fibrosis stage distributio n at presentation
+F0-F1 40.5% Dirichl et [31]
+F2 24.1% Dirichl et
+F3-F4 35.3% Dirichl et
+Annual probability of background testing 6.2% (3.8%) Beta [32]
+Transition probabilit ies per cycle
+From F0 to F1 0.107 (0.005) Beta [33]
+From F1 to F2 0.082 (0.004) Beta
+From F2 to F3 0.117 (0.006) Beta
+From F3 to F4 0.116 (0.007) Beta
+From F4
+. . .to decompensat ed cirrhosis (DC) 0.05 (0.038) Beta [34]
+. . .to hepatocell ular carcinom a (HCC) 0.017 (0.013) Beta [35]
+. . .to HCV-relat ed death 0.01 (0.006) Beta [36]
+From DC
+. . .to HCC 0.017 (0.013) Beta [35]
+. . .to liver transplant (LT) 0.12 (0.092) Beta [37]
+(Continued )
+PLOS GLOB AL PUBLIC  HEALTH
+Cost-utility of hepatitis C testing in emergenc y departme nts in France
+PLOS Global Public Health | https:/ /doi.org/10.13 71/journal.p gph.000 1559 February 23, 2023 5 / 19
+
+--- PAGE 6 ---
+
+Table 1. (Continu ed )
+Parameters Mean value (SE) Distribut ion Reference
+. . .to HCV-relat ed death 0.13 (0.01) Beta [38]
+From HCC
+. . .to LT 0.17 (0.13) Beta [39]
+. . .to HCV-relat ed death 0.43 (0.03) Beta [38]
+From LT
+. . .to HCV-relat ed death (first year) 0.158 (0.01) Beta [40]
+. . .to HCV-relat ed death (followin g years) 0.039 (0.001) Beta
+From F4 SVR
+. . .to DC (RR, respectiv e to non-SVR probab ility) 0.07 (0.043) Log-norma l [41]
+. . .to HCC (RR respectiv e to non-SVR probab ility) 0.19 (0.092) Log-norma l
+Chance of achievin g SVR
+After first treatment in F0-F3 0.928 (0.013) Beta [42]
+After re-treatment in F0-F3 0.93 (0.01) Beta
+After first treatment in F4 0.908 (0.026) Beta
+After re-treatment in F4 0.855 (0.042) Beta
+All-cause mortality
+45 to 49 years 0.002 [28]
+50 to 54 years 0.003
+55 to 59 years 0.005
+60 to 64 years 0.008
+65 to 69 years 0.011
+70 to 79 years 0.018
+80 to 89 years 0.057
+90 to 110 years 0.183
+Health state utility scores
+F0-F1 0.82 (0.1
+‡
+) Beta [31]
+F2 0.82 (0.1
+‡
+) Beta
+F3—Com pensated cirrhosis (F4) 0.76 (0.1
+‡
+) Beta
+Decompens ated cirrhosis 0.60 (0.1
+‡
+) Beta [43]
+Hepatocell ular carcinoma 0.60 (0.1
+‡
+) Beta
+Liver transplant (first year) 0.55 (0.1
+‡
+) Beta
+Liver transplant (followin g years) 0.82 (0.1
+‡
+) Beta
+SVR in mild fibrosis (F0-F1) 0.95 (0.1
+‡
+) Beta
+SVR in moderate fibrosis and cirrhosis (F2-F4) 0.85 (0.1
+‡
+) Beta
+Cost parame ters (cost year)
+Screening costs (2020)
+Anti-body test cost 13 (8.7) Gamma [44]
+RNA-positiv ity test cost 52 (19.9) Gamma
+Contacting costs 10 (6.4) Gamma Assumpt ion
+Outpatient evaluation (prior to treatment) 138 (78.3) Gamma Assumpt ion
+Background testing costs 25 (9.6) Gamma Assumpt ion
+Treatmen t costs (2020)
+Drug costs 24,836 (12,400–3 7,200)
+†
+Uniform [45, 46]
+Monitoring costs 138 (78.3) Gamma Assumpt ion
+Health-state specific costs (2015)
+§
+F0-F2
+(Continued )
+PLOS GLOB AL PUBLIC  HEALTH
+Cost-utility of hepatitis C testing in emergenc y departme nts in France
+PLOS Global Public Health | https:/ /doi.org/10.13 71/journal.p gph.000 1559 February 23, 2023 6 / 19
+
+--- PAGE 7 ---
+
+Treatment outcomes. For those receiving treatment, it was assumed 91% to 93% of
+patients would achieve SVR (depending on their fibrosis stage at treatment initiation), upon
+which they had no further disease progression, except for those in F4, who might progress to
+DC or HCC, but at a reduced rate. Those without SVR were retreated once, at a lower proba-
+bility of SVR, depending on fibrosis stage (Table 1). The model did not consider the risk of
+reinfection or of onward HCV transmission.
+Transition probabilities & mortality rates. The transition probabilities for disease pro-
+gression were taken from the literature (Table 1). These have been used in other cost-effective-
+ness analyses of HCV testing in France [8], apart from updated estimates for fibrosis stages
+[33, 53] and risk of death following liver transplantation [40].
+Utilities. Health utility scores were obtained from the two most recent studies evaluating
+health-related quality of life in patients with CHC in France (Table 1), one focusing on fibrosis
+stages [31], the other on advanced liver disease [43]. Those studies elicited health-state evalua-
+tion using a EuroQol-5D questionnaire, with a time trade-off (TTO) value set used for France
+[54], as per HAS recommendations [26].
+Costs. Screening, treatment and health-state specific costs were included (Table 1).
+Screening costs included an HCV antibody test, and for those antibody positive, a subsequent
+RNA test. Test costs were taken from reimbursement data from the French national sickness
+fund [44]. It also included time to contact RNA-positive patients and to link them to care. This
+Table 1. (Continu ed )
+Parameters Mean value (SE) Distribut ion Reference
+Ambulatory costs (treatment naïve) 72 (10) Gamma [8]
+Ambulatory costs (after treatmen t failure) 54 (12) Gamma
+Hospitalizati on costs 286 (1,117) Gamma
+F3
+Ambulatory costs (treatment naïve) 131 (23) Gamma
+Ambulatory costs (after treatmen t failure) 88 (15) Gamma
+Hospitalizati on costs 286 (1,117) Gamma
+F4
+Ambulatory costs (treatment naïve) 234 (21) Gamma
+Ambulatory costs (after treatmen t failure) 73 (18) Gamma
+Hospitalizati on costs 1,330 (3,834) Gamma
+DC
+Ambula tory costs 99 (22) Gamma
+Hospitalizati on costs 8,343 (9,427) Gamma
+HCC
+Ambula tory costs 99 (22) Gamma
+Hospitalizati on costs 12,065 (11,951) Gamma
+Liver transplant (first year)
+Ambula tory costs - Gamma
+Hospitalizati on costs 57,546 (41,427) Gamma
+Liver transplant (followin g years)
+Hospitalizati on costs 5,593 (11,426) Gamma
+RNA = ribonu cleic acid. LR = literature review. HCV = hepatitis C virus. RR = Relative risk. SVR = Sustained virological response. SE = standard error. †Rang e of values
+consider ed within a uniform distribution , instead of SE. ‡Due to lack of information about SE, sample size, beta or alpha, assumptio n of 0.1 was made to capture
+uncertainty . §Adjusted to 2020 costs, using the Hospital and community health services Pay and prices Index Inflation, from the French Office for national statistics
+(INSEE) (1.03).
+https://do i.org/10.1371/j ournal.pgph .0001559.t001
+PLOS GLOB AL PUBLIC  HEALTH
+Cost-utility of hepatitis C testing in emergenc y departme nts in France
+PLOS Global Public Health | https:/ /doi.org/10.13 71/journal.p gph.000 1559 February 23, 2023 7 / 19
+
+--- PAGE 8 ---
+
+process was assumed to cost €10.00, under the assumption of an average of 26 minutes to con-
+tact each patient (whether contact was successful or not), derived from a previous cost-effec-
+tiveness analysis on HCV ED-based testing [17, 55] and of a nurse hourly cost of €24/hour.
+Patients successfully contacted and receiving treatment were assumed to all undergo an outpa-
+tient evaluation, which was estimated to equate to three consultation visits (evaluation, follow-
+up during treatment and after treatment), plus extra-fees due to complexity (€ 138.00 in total)
+[56]. For patients reached by background testing, cost was assumed to amount to a GP
+appointment (€ 25.00), in addition to test costs, if infected (Table 1). No additional cost for
+blood collection was considered, as blood samples were taken for routine care.
+Drug prices were estimated using public database available from the French national sick-
+ness fund, with an average cost of €24,836 assumed for course of DAA treatment [57, 58]
+(Table 1).
+Health-state specific costs covered outpatient care (ambulatory) and hospitalization costs
+associated to being in a HCV-state. Costs were derived from the 2018 French model-based
+CUA looking at HCV screening, except that increased costs associated to death occurring in
+hospital were not taken into account [8], because share of in-hospital deaths was unknown.
+Ambulatory cost estimates differed as to whether the patient was treatment naive or experi-
+enced SVR failure (Table 1).
+As instructed by the HAS [26], all costs were adjusted, using the Hospital and community
+health services pay and prices index inflation [59].
+Model analyses
+Incremental cost effectiveness ratios (ICER) were calculated as costs per quality-adjusted life
+years gained (€/QALY). In the absence of an explicit willingness-to-pay (WTP) threshold in
+France, two thresholds were used. A threshold of one-time GDP per capita (€33,817), the
+lower limit previously recommended by WHO [60], and a more conservative value of €18,592,
+based on the health opportunity cost estimated for France by Woods et al [61] and adjusted to
+2020 prices [62]. This equates to 0.55 time GDP per capita.
+Sensitivity analysis. Both deterministic and probabilistic sensitivity analyses were per-
+formed to assess the impact of parameter uncertainty. In the deterministic sensitivity analysis
+(DSA), the prevalence, DAA price, the cost of antibody test, the rate of background testing and
+the proportion of positive patients engaged in care were varied. Regarding rate of background
+testing, lower and upper bounds of 4% and 19% used in two French studies were considered,
+differentiating proportion of people reached by risk-based strategy, according to presence of
+risk factors or not [63, 64]. The proportion of patients engaged in care was varied from 20% to
+60% based on the value range retrieved in the targeted literature review. In accordance with
+HAS guidelines [26], discount rate was also varied, using 0% and 4.5% for both costs and
+QALY.
+In the absence of French studies of ED testing, a threshold analysis sought to provide mini-
+mum prevalence estimates under which the intervention remains cost-effective. A range of
+HCV prevalence was considered, and resulting ICERs were compared WTP thresholds, to
+account for potential regional variations in prevalence [65].
+In the probabilistic sensitivity analysis (PSA), appropriate distributions were assigned to
+each parameter (Table 1). The analysis ran 10,000 Monte Carlo simulations, with each param-
+eter randomly sampled and corresponding ICERs calculated.
+Value of information analysis. Using the iterations from the PSA, the expected value of
+perfect information (EVPI) was estimated using the average net health loss that could occur if
+the wrong decision were made. The EVPI per person was multiplied by the estimated number
+PLOS GLOB AL PUBLIC  HEALTH
+Cost-utility of hepatitis C testing in emergenc y departme nts in France
+PLOS Global Public Health | https:/ /doi.org/10.13 71/journal.p gph.000 1559 February 23, 2023 8 / 19
+
+--- PAGE 9 ---
+
+of beneficiaries per year, for each year of the time horizon. Approximately 10,662,000 different
+patients aged between 18 and 80 years visit the ED each year in France [27, 66]. We considered
+the time horizon of the intervention over 2 years in the base case, but also considered values of
+3, 5 and 10 years. These were deemed to be relevant for decision making, given 2030 elimina-
+tion targets. A 2.5% discount rate was included, as per HAS guidelines [26].
+Results
+Base case results
+ED-based screening was found to be more effective in detecting new cases, than current risk-
+based approach. For every 100,000 individuals presenting to ED’s, ED-based screening
+detected 70 additional cases, of whom 23 effectively engaged in care.
+This reduced morbidity and mortality, and for every 100,000 ED attendees, 40 years less
+were lived with DC, HCC and LT, and 5 HCV-related deaths were averted.
+ED testing was associated with an additional €2.01 for each person being tested, due to
+extra testing and treatment-related costs, outweighing savings in health-state related costs, and
+yielded a gain of 0.0005 QALYs per person. This gave an ICER of € 3,813 per QALY gained
+(Table 2), which meant the intervention was highly cost-effective at both WTP thresholds in
+the base case.
+A threshold analysis identifying the lowest ED prevalence at which testing would remain
+cost-effective found that testing was cost-effective when the prevalence exceeded 0.39%, for
+both WTP thresholds (Fig 2). When considering the higher WTP threshold of € 33,817, testing
+remained cost-effective when the prevalence was 0.24% or higher.
+Sensitivity analysis
+Deterministic sensitivity analysis. The one-way analyses found that the ICER was most
+sensitive to an increased cost of antibody test. When the cost was at least the triple of initial
+assumption, the ICER ended higher than the lowest WTP threshold (€19,427). A lower pro-
+portion of patients reached by background testing, higher discount rates of 4.5%, a higher
+DAA cost and a lower proportion of patients engaged in care, all increased the ICER to
+between €8,408 to €10,336 (Fig 3). None of these altered our final conclusions about cost-
+effectiveness, as none increased the ICER above either of the WTP thresholds. A discount of
+80% in DAA prices reduced the ICER to just €138.
+When varying simultaneously the antibody test cost and, alternatively, the probability of
+being reached by background testing or the probability of engaging in care, a two-way analysis
+found that the ICER remained always below the one-time GDP threshold (€33,817), and
+below the lowest WTP threshold (€18,592) in most combinations. Only some combinations
+where both parameters took simultaneously extreme values of at least twice those of base case
+settings increased the ICER above €18,592 (S1 Fig).
+Table 2. Base-case cost-effecti veness results per person attending the ED.
+Screening strategies Mean cost (€) Mean QALYs ICER (€/QALY)
+No ED testing 133.84 22.3986
+ED testing 135.85 22.3992
+Increment al 2.01 0.0005 3,813
+ICER = incremental cost-effect iveness ratio.
+https://d oi.org/10.1371/j ournal.pgp h.0001559.t002
+PLOS GLOB AL PUBLIC  HEALTH
+Cost-utility of hepatitis C testing in emergenc y departme nts in France
+PLOS Global Public Health | https:/ /doi.org/10.13 71/journal.p gph.000 1559 February 23, 2023 9 / 19
+
+--- PAGE 10 ---
+
+Probabilistic sensitivity analysis. The intervention was likely to be cost-effective in the
+base case analysis. At the WTP thresholds of €18,592 and €33,817, testing was cost-effective in
+70% and 82% of simulations (Fig 4). The mean probabilistic ICER was €4,070, which is slightly
+Fig 2. Threshold analysis. Dotted lines indica te WTP thresholds of € 18,592 and € 33,817.
+https://d oi.org/10.1371/j ournal.pgp h.0001559.g002
+Fig 3. Tornado—O ne-way analysis.
+https://d oi.org/10.1371/j ournal.pgp h.0001559.g00 3
+PLOS GLOB AL PUBLIC  HEALTH
+Cost-utility of hepatitis C testing in emergenc y departme nts in France
+PLOS Global Public Health | https:/ /doi.org/10.13 71/journal.p gph.000 1559 February 23, 2023 10 / 19
+
+--- PAGE 11 ---
+
+higher than the deterministic ICER, due to some uniform distributions for parameters not
+being centred around the deterministic mean. Regardless of WTP threshold, the intervention
+had a 20% probability of being the dominant strategy (more effective, less costly), while there
+was very little chance of being dominated (less effective, more costly) (Fig 5).
+Expected value of perfect information. The population level EVPI was €17 and €10 mil-
+lion when considering all ED attendees across France for a period of 2 years, for WTP of
+respectively € 18,592 and € 33,817. This corresponds to a value of information per person
+attending the ED of €0.83 and €0.49, respectively (S2 Fig). When considering longer time
+horizons, the population EVPI increased to €26-€15 million (3 years), €42-€25 million (5
+years) and €79-€47 million (10 years), at the higher and lower WTP thresholds respectively
+(S1 Table).
+Discussion
+Main findings
+Our findings demonstrate that HCV testing in the ED could be cost-effective in France,
+although there is a high degree of uncertainty given the absence of any empirical testing data
+from the ED. Using epidemiological data from France, alongside evidence of the effectiveness
+of ED testing from other high-income countries, our results suggest that the ED could be a
+well-positioned setting to reach those infected with HCV, at an acceptable cost for the French
+healthcare system. Testing remained cost-effective as long as the prevalence in ED attendees
+Fig 4. Cost-effectiven ess acceptabili ty curves (CEAC). Dotted lines indicate WTP threshold s of € 18,592 and €
+33,817.
+https://d oi.org/10.1371/j ournal.pgp h.0001559.g004
+PLOS GLOB AL PUBLIC  HEALTH
+Cost-utility of hepatitis C testing in emergenc y departme nts in France
+PLOS Global Public Health | https:/ /doi.org/10.13 71/journal.p gph.000 1559 February 23, 2023 11 / 19
+
+--- PAGE 12 ---
+
+remains higher than in the general population. These results might be insightful from both a
+national perspective, as well as from a local one, as the HCV prevalence might differ markedly
+across regions and locations in France.
+A recent economic evaluation reported that universal HCV testing may be cost-effective in
+France, however this testing approach has been rejected by decision makers due to a lack of
+empirical evidence, and because of uncertainties of the effectiveness of universal testing based
+on HIV testing experiences. Testing in the ED could be one way in which HCV testing is
+increased to include those who are currently unlikely to receive testing, without the need for a
+formal universal testing strategy. There is currently a lack of empirical evidence of ED testing
+in France, but our findings suggest that such a study would be valuable. We show there is a
+high value placed upon further research in this area, in order to reduce the uncertainty around
+the HCV testing decision, and help ensure the most appropriate testing policy is pursued. The
+high value of research identified in our EVPI analysis is due to the high number of people who
+Fig 5. Cost-effectiven ess plane. Lines indica te WTP thresholds of € 18,592 (plain) and € 33,817 (dotted).
+https://d oi.org/10.1371/j ournal.pgp h.0001559.g00 5
+PLOS GLOB AL PUBLIC  HEALTH
+Cost-utility of hepatitis C testing in emergenc y departme nts in France
+PLOS Global Public Health | https:/ /doi.org/10.13 71/journal.p gph.000 1559 February 23, 2023 12 / 19
+
+--- PAGE 13 ---
+
+could benefit from an ED testing intervention, but also due to the considerable uncertainty
+around whether testing is likely to be cost-effective in France.
+Our study also adds to previous economic evaluations of HCV testing in EDs by incorpo-
+rating cost, utility and testing parameters specific to France. These parameters are likely to dif-
+fer across countries, particularly as costs derived from the US and Canada are likely to be
+higher. We have also identified the key factors when considering ED-based HCV testing in
+France, with the infection prevalence amongst attendees and the cost of HCV antibody tests
+particularly important. If lower antibody test prices and/or lower DAA prices can be obtained,
+then the affordability as well as cost-effectiveness of the intervention would be significantly
+improved. The introduction of HCV testing in the ED would represent a significant increase
+in testing, which may give the possibility for lower test prices (per unit) to be negotiated with
+increased testing volumes.
+Comparisons with other research
+Our findings are consistent with previous economic evaluations on opt-out ED-based screen-
+ing schemes, considered in the UK, the US and the Canadian settings [17–19]. In the UK, ED
+testing was highly cost-effective, with HCV testing costing £8,019/QALY, under the assump-
+tion of 1.4% CHC prevalence in ED’s [17]. A follow up cost-effectiveness analysis from two
+UK cities found similar ICERs of £7,177 and £12,387 for testing in Leeds and London respec-
+tively [18]. Testing remained cost-effective at a minimum prevalence of 0.5% in both cities,
+slightly above the UK general population prevalence (0.3%) [67]. In Canada and the US, one
+study found that ED testing was cost-effective, in both countries, with a reference ED preva-
+lence value of 1.8%: at CAN$25,584/QALY and US$42,615/QALY in the birth-cohort option,
+and at CAN$19,733/QALY and US$32,187/QALY in the general population one. Again, the
+intervention remained cost-effective in Canada, at a minimum prevalence of 1%, slightly
+above the Canadian general population prevalence (0.8%).
+The similarities in findings is unsurprising given that our evaluation used a similar model
+and in some instances, used parameters derived from other countries, where these were
+unavailable from France. The ED is known to be a touchpoint for marginalized and under-
+served communities, at increased risk of HCV infection and less likely to engage with conven-
+tional care models. Even though epidemiological context differs across countries, this pattern
+in use of ED services is likely to remain common across high-income countries.
+Limitations
+This study has numerous limitations that might affect the interpretation of the findings.
+EVPI estimate bears some limitations that might lead to an actual lower value. First, HCV
+prevalence in France is declining over time, which was not incorporated into the VOI analysis.
+Second, there is uncertainty in the estimate of annual number of ED attendees. Some individu-
+als might attend ED services several times in a year. Ultimately, the relevance of the VOI analy-
+sis is always conditional on how well the decision model was set and the extent to which
+parameter uncertainty was well incorporated by assigning appropriate distributions to each
+parameters. Limitations of present study in that regard are inherent to secondary data
+research, where parameter estimates were taken from the literature.
+Our study sought to draw on best existing evidence from France. Still, uncertainty around
+the parameter values remains. Sensitivity analyses aimed to account for this, however there
+remain several assumptions made in the absence of data. There is particular uncertainty
+around the prevalence of HCV amongst ED attendees in France, and also the intervention
+effectiveness following diagnosis (e.g. the proportion of patients engaged in care after being
+PLOS GLOB AL PUBLIC  HEALTH
+Cost-utility of hepatitis C testing in emergenc y departme nts in France
+PLOS Global Public Health | https:/ /doi.org/10.13 71/journal.p gph.000 1559 February 23, 2023 13 / 19
+
+--- PAGE 14 ---
+
+detected). The ED-specific prevalence estimate is a key parameter in the model and to which
+results are sensitive. Findings from other studies have shown an elevated HCV prevalence in
+ED attendees but these have mostly been performed in urban areas. The robustness of our
+results could be strongly improved by a more accurate measure taken from seroprevalence sur-
+veys conducted specifically in France.
+This model is also simpler compared to other economic evaluations of HCV testing. First, it
+does not incorporate the impact of risks factors, such as drug or alcohol intake, or the existence
+of HIV/HBV co-infection which may alter the effectiveness of screening or disease progres-
+sion, and this heterogeneity amongst risk groups could impact the cost-effectiveness estimates.
+Second, the model does not account for HCV transmission, either as reinfection for those
+achieving SVR, or the benefit of reduced onward transmission. Third, the model does not
+allow for people to be detected beyond the stage of CC. Fourth, our study takes a health system
+perspective, excluding indirect and future unrelated costs and benefits, albeit these would
+likely make such an intervention even more cost-effective. Finally, the model only evaluated
+HCV testing, while additional blood-borne virus testing for HIV and HBV may be of interest
+too, with an integrated testing approach recommended by the European Centre for Disease
+Control [68]. The value of research into a blood borne virus testing strategy would be even
+higher than that for HCV alone, although considering testing for multiple infections will add
+complexity to the decision making process, particularly as some areas may have a higher prev-
+alence of some blood-borne viruses compared to others [69].
+Implications for policy and future research
+Our results can be useful to illuminate the current debate around HCV screening policy in
+France. While HAS recently dismissed universal screening in favour of intensification of cur-
+rent risk-based testing approach, opt-out ED-based screening could be considered a middle-
+ground, by providing testing in settings that are open to everyone but in which those at higher
+risk of HCV are more likely to attend.
+Unlike the HAS objections against universal screening, it can be argued that other high-
+income countries have set a precedent for ED screening, where early evidence has shown it to
+be feasible, acceptable, and a cost-effective way to detect undiagnosed HCV. Whilst it remains
+too early to recommend any ED testing policies due to a lack of empirical evidence from
+France, our study indicates that the value of further research is likely to be high.
+Future studies should address several key uncertainties. Firstly, studies should estimate the
+HCV prevalence in French ED settings, and ideally seroprevalence surveys should be under-
+taken in multiple sites across areas in France. Future pilot studies should also seek to confirm
+the feasibility and acceptability of HCV screening in the ED, as well as collecting data on the
+effectiveness of the intervention to link those who are diagnosed into care and onto treatment,
+as this is an area of uncertainty which is important to the model results. Barriers to effective
+linkage to care might be substantial in ED settings, owing to socio-economic profiles of indi-
+viduals more likely to have no health coverage, and the difficulties in linking patients following
+a one-off ED visit.
+Conclusions
+Our early findings suggest that ED-based HCV screening could be cost-effective in France,
+using epidemiological data from France and assumptions around the effectiveness of ED-test-
+ing from other high-income countries. There remains considerable uncertainty around
+whether such an intervention would be cost-effective in France, however, our findings show
+that future research would be of a high value, and therefore this might be a policy option
+PLOS GLOB AL PUBLIC  HEALTH
+Cost-utility of hepatitis C testing in emergenc y departme nts in France
+PLOS Global Public Health | https:/ /doi.org/10.13 71/journal.p gph.000 1559 February 23, 2023 14 / 19
+
+--- PAGE 15 ---
+
+worth investigating further. This is particularly true given HAS reservations about providing
+universal screening for HCV in France.
+If future studies are performed, then these should seek to address uncertainties around the
+prevalence of HCV amongst ED attendees in France, and consider the acceptability and effec-
+tiveness of an ED-based screening strategy in terms of linking patients onto treatment. There
+may also be potential to consider a blood borne virus screen in ED’s, which would also include
+HIV and HBV.
+Supporting information
+S1 Text. Targeted literature review.
+(DOCX)
+S1 Fig. Two-way sensitivity analysis.
+(DOCX)
+S2 Fig. Per-patient EVPI according to varying willingness-to-pay thresholds.
+(TIFF)
+S1 Table. Population EVPI across varying willingness to pay thresholds.
+(DOCX)
+Author Contributions
+Conceptualization: Nicolas Noiriel, Jack Williams.
+Data curation: Nicolas Noiriel, Jack Williams.
+Formal analysis: Nicolas Noiriel, Jack Williams.
+Methodology: Nicolas Noiriel, Jack Williams.
+Software: Nicolas Noiriel, Jack Williams.
+Supervision: Jack Williams.
+Validation: Jack Williams.
+Visualization: Nicolas Noiriel, Jack Williams.
+Writing – original draft: Nicolas Noiriel.
+Writing – review & editing: Jack Williams.
+References
+1. Brouard C, Sabon i L, Gautier A, Chevaliez S, Rahib D, Richard JB, et al. HCV and HBV prevalen ce
+based on home blood self-samplin g and screening history in the general population in 2016: contribu -
+tion to the new French screening strategy. BMC Infectious Diseases [Interne t]. 2019 Oct 28 [cited 2021
+Mar 31]; 19(1):896. Available from: https://doi.or g/10.1186/ s12879-019- 4493-2 PMID: 3166087 9
+2. Jauffret- Roustide M, Le Strat Y, Couturier E, Thierry D, Rondy M, Quaglia M, et al. A national cross-sec -
+tional study among drug-users in France: epidemiology of HCV and highlight on practical and statistical
+aspects of the design. BMC Infect Dis [Internet ]. 2009 Dec [cited 2021 Jul 16]; 9(1):113. Availab le from:
+https://bm cinfectdis.biom edcentral.c om/articles/10 .1186/14 71-2334-9 -113 PMID: 19607712
+3. Chemlal K, Bouscaill ou J, Jauffret- Roustide M, Semaille C, Barbier C. Health care services in French
+jails: HIV and hepatitis infections. The PREVA CAR survey, 2010. BEH [Interne t]. 2012;pp .131–134.
+Available from: https://hal- cnrs.archive s-ouverte s.fr/hal-034 78569
+4. for the ANRS-Pr evagay group, Vaux S, Chevaliez S, Saboni L, Sauvage C, Sommen C, et al. Preva-
+lence of hepatitis C infection, screening and associa ted factors among men who have sex with men
+attending gay venues: a cross-sect ional survey (PREVAGAY) , France, 2015. BMC Infect Dis [Internet ].
+PLOS GLOB AL PUBLIC  HEALTH
+Cost-utility of hepatitis C testing in emergenc y departme nts in France
+PLOS Global Public Health | https:/ /doi.org/10.13 71/journal.p gph.000 1559 February 23, 2023 15 / 19
+
+--- PAGE 16 ---
+
+2019 Dec [cited 2021 Aug 9]; 19(1):315. Availab le from: https://bm cinfectdis.biom edcentral. com/
+articles/10 .1186/s12 879-019-3 945-z PMID: 309712 07
+5. Haute autorite ´ de sante ´ . He ´ patite C: prise en charge simplifie ´ e chez l’adulte [Internet]. Haute autorit e ´
+de sante ´ ; 2019 p. 86. Availab le from: https://ww w.has-sante.fr /upload /docs/applica tion/pdf/2 019-03/
+rapport_el aboration_h epatite_ c.pdf
+6. World Health Organizatio n. Global progress report on HIV, viral hepatiti s and sexually transmitted infec-
+tions, 2021. Accountab ility for the global health sector strategie s 2016–2 021: actions for impact.
+Geneva: World Health Organizat ion; 2021. Licence: CC BY-NC-S A 3.0 IGO [Internet]. World Health
+Organizatio n; 2021. Available from: https:/ /www.who.int /publications /i/item/9789 240027077
+7. AFEF recomm endation for HCV elimination in France [Internet ]. AFEF—Frenc h society for hepatology ;
+2021 Apr [cited 2021 Apr 27]. Available from: https://afef.as so.fr/wp-conte nt/uploa ds/2018/0 6/VF-
+INTERACTIF -RECO-VH C-AFEF-v 2103.pdf
+8. Deuffic-Bur ban S, Huneau A, Verleene A, Brouard C, Pillonel J, Strat YL, et al. Assessing the cost-
+effectivenes s of hepatiti s C screening strategie s in France. Journal of Hepatolog y [Interne t]. 2018 Oct 1
+[cited 2021 Mar 31]; 69(4):785– 92. Available from: https://www .journal-of-hepa tology.eu/a rticle/S0168-
+8278(18)3 2112-3/abs tract https://doi.or g/10.101 6/j.jhep.2018. 05.027 PMID: 302279 16
+9. Haute autorite ´ de sante ´ . Re ´ e ´ valuation de la strate ´ gie de de ´ pistage de l’infectio n à VIH en France [Inter-
+net]. Haute autorite ´ de sante ´ ; [cited 2021 Aug 9] p. 305. Available from: https:// www.has-sante .fr/jcms /
+c_20244 11/fr/reevalua tion-de-la- strategie -de-depistag e-de-l-inf ection-a-vih- en-france
+10. Haute autorite ´ de sante ´ . E
+´
+valuation des strate ´ gies de de ´ pistage des personnes infecte ´ es par le virus de
+l’he ´ patite C (VHC) [Internet]. Haute autorite ´ de sante ´ ; [cited 2021 Aug 9] p. 129. Availab le from: https://
+www.has-s ante.fr/jcms/c _2886668/fr/e valuation -des-stra tegies-de-de pistage-des -personnes-
+infectees-p ar-le-viru s-de-l-hep atite-c-vhc
+11. Gentile I, Pinchera B, Viceconte G, Crispo M, Simeone D, Scotto R, et al. Hepatitis C screening in the
+Emergenc y Department of a large hospital in southern Italy: results of a pilot study. Infez Med [Interne t].
+2019; 27(1):32–9 . Availab le from: https://ww w.infezme d.it/media/j ournal/Vol _27_1_2019_ 5.pdf PMID:
+30882376
+12. Cullen L, Grenfell P, Rodger A, Orkin C, Mandal S, Rhodes T. ‘Just another vial’: A qualitativ e study to
+explore the accepta bility and feasibility of routine blood-bor ne virus testing in an emerge ncy departme nt
+setting in the UK. BMJ Open [Interne t]. 2019; 9(4):02408 5. Availab le from: http://bm jopen.bmj. com/
+content/ear ly/by/secti on
+13. Allison WE, Chiang W, Rubin A, Oshva L, Carmody E. Knowledge about Hepatitis C Virus Infection and
+Acceptabi lity of Testing in the 1945–1 965 Birth Cohort (Baby Boomer s) Presenting to a Large Urban
+Emergenc y Department : A Pilot Study. J Emerg Med [Interne t]. 2016; 50(6):825– 831.e2. Available
+from: https://linking hub.elsevi er.com/retr ieve/pii/S0 73646791600 113X https://doi.or g/10.101 6/j.
+jemermed .2016.02. 001 PMID: 26954104
+14. Capraru CI, McCorma ck B, Vanderhoff AM, Shah H, Jansse n HL, Friedman SM, et al. Evaluation of
+birth cohort hepatiti s C screening program in an academic emergenc y departme nt. J Viral Hepatitis.
+2018; 25(Supple ment 2):162.
+15. Douthwa ite S, Evans H, Balasega ram S, Wong T, Nebbia G. Does opt-out testing for hepatiti s B and C
+in emergenc y departme nts work? A 6 week pilot study. Gut. 2017; 66(Supple ment 2):A87–8.
+16. Bradshaw D, Rae C, Rayment M, Turner N, Turner R, Pickard G, et al. HIV/HCV/H BV testing in the
+emergen cy departme nt: a feasibili ty and seroprev alence study. HIV Med [Interne t]. 2018 Feb [cited
+2021 Jul 17]; 19:52–7. Availab le from: https://onlin elibrary.w iley.com/ doi/10.1111/hi v.12590 PMID:
+29488696
+17. Williams J, Vickerman P, Douthw aite S, Nebbia G, Hunter L, Wong T, et al. An Economic Evaluation of
+the Cost-Effec tiveness of Opt-Out Hepatitis B and Hepatitis C Testing in an Emergenc y Department
+Setting in the United Kingdom . Value in Health [Interne t]. 2020 Aug 1 [cited 2021 Mar 31]; 23(8):1003 –
+11. Available from: https://www .valueinh ealthjourna l.com/article/S 1098-3015( 20)32063- 5/abstract
+PMID: 328282 11
+18. Williams J, Vickerman P, Smout E, Page EE, Phyu K, Alders ley M, et al. Universal testing for hepatitis B
+and hepatitis C in the emerge ncy department : a cost-effectiv eness and budget impact analysis of two
+urban hospitals in the United Kingdom. Cost Eff Resour Alloc [Internet]. 2022 Nov 14 [cited 2022 Dec
+6]; 20(1):60. Availab le from: https://res ource-allocati on.biome dcentral. com/articles/1 0.1186/s129 62-
+022-00388- 7 PMID: 363769 20
+19. Mendlowitz AB, Naimark D, Wong WWL, Capraru C, Feld JJ, Isaranuwatc hai W, et al. The emergenc y
+departme nt as a setting-spe cific opportunity for population- based hepatiti s C screening : An economic
+evaluatio n. Liver Int [Interne t]. 2020; 40(6):1282 –91. Available from: https:/ /doi.org/10.11 11/liv.144 58
+PMID: 322676 04
+PLOS GLOB AL PUBLIC  HEALTH
+Cost-utility of hepatitis C testing in emergenc y departme nts in France
+PLOS Global Public Health | https:/ /doi.org/10.13 71/journal.p gph.000 1559 February 23, 2023 16 / 19
+
+--- PAGE 17 ---
+
+20. Haukoos JS, Rowan SE, Galbraith JW, Rothman RE, Hsieh YH, Hopkins E, et al. The Determinin g
+Effective Testing in Emergenc y Departments and Care Coordin ation on Treatmen t Outcomes
+(DETECT) for Hepatitis C (Hep C) Screening Trial: rationale and design of a multi-cente r pragmatic ran-
+domized clinical trial of hepatiti s C screening in emerge ncy departments . Trials [Interne t]. 2022 Dec
+[cited 2022 Nov 26]; 23(1):354. Availab le from: https://trials journal.biome dcentral .com/articles/ 10.1186/
+s13063-022 -06265-1 PMID: 35468807
+21. Capron D, Bensou san T, Darchis JP, Barbare JC, Butela J, Bental A, et al. Hepatitis C virus infection
+risk factors in patients admitted in hospital emerge ncy departments in Picardy. Value of oriented
+screening based on recomme ndations of the ‘Direction Ge ´ ne ´ rate de la Sante ´ : European Journal of
+Gastroenter ology & Hepatolog y [Internet] . 1999 Jun [cited 2021 Aug 10]; 11(6):643– 8. Available from:
+http://jour nals.lww.co m/000427 37-1999060 00-00010
+22. Gardona RGB, Barbosa DA, Ferraz MLG. Screening for hepatitis C in urgent and emerge ncy units: a
+systematic review. Rev Esc Enferm USP [Internet]. 2020; 54(rss, 024272 6):e03611. Available from:
+http://www .scielo.br/sciel o.php?scr ipt=sci_ arttext&pid= S0080-623 42020000100 805&tlng=pt
+23. Hsieh YH, Rothman RE, Laeyendec ker OB, Kelen GD, Avornu A, Patel EU, et al. Evaluation of the Cen-
+ters for Disease Control and Preven tion Recommen dations for Hepatitis C Virus Testing in an Urban
+Emergenc y Department . Clin Infect Dis. 2016; 62(9):1059 –65. https://doi.or g/10.1093/ cid/ciw074
+PMID: 269088 00
+24. Lyons MS, Kunnat hur VA, Rouste r SD, Hart KW, Sperling MI, Fichtenbau m CJ, et al. Prevalen ce of
+Diagnosed and Undiagno sed Hepatitis C in a Midwes tern Urban Emerge ncy Departme nt. Clin Infect
+Dis. 2016; 62(9):1066 –71. https://doi.or g/10.1093/ cid/ciw073 PMID: 269087 99
+25. Green PJ, Hoffman -Pyle K, McCarthy JJ, Pan J. Birth cohort HCV screening in an emergenc y depart-
+ment-an analysis of risk in antibody positive patients. Acad Emerg Med. 2014; 21(5 SUPPL. 1):S204.
+26. Haute autorite ´ de sante ´ . Choix me ´ thodolo giques pour l’e ´ valuation e ´ conomiqu e [Internet]. Haute auto-
+rite ´ de sante ´ ; 2020 p. 118. Availab le from: https://www .has-sante.fr /upload /docs/applica tion/pdf/2 020-
+07/guide_m ethodologiqu e_evalu ation_eco nomique_has _2020_vf. pdf
+27. DREES. Les urgence s hospitalièr es, qu’en sait-on? [Interne t]. DREES; 2013 p. 18. (Panorama des e ´ ta-
+blissements de sante ´ ). Availab le from: https://dree s.solidari tes-sante.go uv.fr/sites /default/fi les/2021-
+02/panoram a2013_doss ier01.pdf
+28. Taux de mortalite ´ par sexe et a ˆ ge [Interne t]. Ined—In stitut nationa l d’e ´ tudes de ´ mograp hiques. [cited
+2021 Jul 13]. Available from: https://www .ined.fr/fr/tout -savoir-popu lation/chi ffres/france /mortalite-
+cause-de ces/taux-m ortalite-sexe-a ge/
+29. Burrell CN, Sharon MJ, Davis SM, Wojcik EM, Martin IBK. Implem entation of a Collabor ative HIV and
+Hepatitis C Screening Program in Appalac hian Urgent Care Settings. West J Emerg Med [Interne t].
+2018; 19(6):1057 –64. Available from: https:// www.ncbi.nlm .nih.gov/pmc/ articles/PMC62 25946/ https://
+doi.org/10.58 11/westjem. 2018.9.39512 PMID: 30429942
+30. Torian LV, Felsen UR, Xia Q, Laraque F, Rude EJ, Rose H, et al. Undiagno sed HIV and HCV Infection
+in a New York City Emerge ncy Departm ent, 2015. Am J Public Health [Internet] . 2018; 108(5):652 –8.
+Available from: http://ajph .aphapublicat ions.org/doi/10 .2105/A JPH.2018.30 4321 PMID: 29565667
+31. Cossais S, Schwarzing er M, Pol S, Fontaine H, Larrey D, Pageaux GP, et al. Quality of life in patients
+with chronic hepatiti s C infection: Severe comorbidities and disease perception matter more than liver-
+disease stage. Fischer F, editor. PLoS ONE [Internet ]. 2019 May 3 [cited 2021 Jul 8]; 14(5):e021 5596.
+Available from: https://dx. plos.org/10.137 1/journal.po ne.0215596 PMID: 31050687
+32. Pioche C. De ´ pistage des he ´ patitces B et C en France en 2016, nouvelle e ´ dition de l’enquête LABOH EP
+/ He ´ patitis B and C screening in France in 2016. The new edition of the Labohep study. BEH [Interne t].
+2018; 8. Availab le from: http://beh.s antepublique france.fr /beh/2018/1 1/pdf/2018_11_ 1.pdf
+33. Erman A, Krahn MD, Hansen T, Wong J, Bielecki JM, Feld JJ, et al. Estimation of fibrosis progres sion
+rates for chronic hepatitis C: a systematic review and meta-ana lysis update. BMJ Open [Interne t]. 2019
+Nov [cited 2021 Jul 14]; 9(11):e027 491. Available from: https://bmjope n.bmj.c om/lookup/d oi/10.1136/
+bmjopen -2018-027 491 PMID: 31719068
+34. Serfaty L, Aumaı ˆ tre H, Chazouillère s O, Bonnand AM, Rosmorduc O, Poupon RE, et al. Determinan ts
+of outcome of compens ated hepatitis C virus-re lated cirrhosis. Hepatolog y [Internet]. 1998 [cited 2021
+Jul 23]; 27(5):1435 –40. Available from: https://aasldpu bs.onlinelibr ary.wiley.c om/doi/ab s/10.1002 /hep.
+510270535 PMID: 9581703
+35. Degos F, Christidis C, Ganne-C arrie N, Farmachid i J, Degott C, Guettier C, et al. Hepatitis C virus
+related cirrhosis: time to occurrence of hepatocellular carcinoma and death. Gut [Internet]. 2000 Jul
+[cited 2021 Jul 23]; 47(1):131– 6. Available from: https://www. ncbi.nlm.nih .gov/pmc/ articles/
+PMC172794 6/ https:// doi.org/10.11 36/gut.47 .1.131 PMID: 10861275
+36. D’Amico G, Garcia-Ts ao G, Pagliaro L. Natural history and prognostic indicators of survival in cirrhosi s:
+A systematic review of 118 studies. Journal of Hepatolog y [Internet] . 2006 Jan [cited 2021 Jul 9]; 44
+PLOS GLOB AL PUBLIC  HEALTH
+Cost-utility of hepatitis C testing in emergenc y departme nts in France
+PLOS Global Public Health | https:/ /doi.org/10.13 71/journal.p gph.000 1559 February 23, 2023 17 / 19
+
+--- PAGE 18 ---
+
+(1):217–31 . Available from: https://linking hub.elsevie r.com/retriev e/pii/S01688 278050068 47 https://doi.
+org/10.1016/ j.jhep.2005.10 .013 PMID: 16298014
+37. Deuffic–Bur ban S, Deltenre P, Buti M, Stroffolini T, Parkes J, Mu ¨ hlberger N, et al. Predicte d Effects of
+Treatmen t for HCV Infection Vary Among European Countries. Gastroenter ology [Interne t]. 2012 Oct
+[cited 2021 Jul 16]; 143(4):974 –985.e14. Available from: https://linking hub.elsevi er.com/retr ieve/pii/
+S001650851 201151 1 https://doi.or g/10.1053/ j.gastro.2012. 05.054 PMID: 22863764
+38. Shepherd J, Jones J, Hartwell D, Davidson P, Price A, Waugh N. Interfero n alfa (pegylated and non-
+pegylated ) and ribavirin for the treatment of mild chronic hepatitis C: a systematic review and economic
+evaluatio n. Health Technol Assess [Internet]. 2007 Mar [cited 2021 Jul 9]; 11(11). Availab le from:
+https://www .journalslibr ary.nihr.ac .uk/hta/hta11 110/
+39. Mourad A, Deuffic -Burban S, Ganne-C arrie ´ N, Renaut-V antroys T, Rosa I, Bouvier AM, et al. Hepato-
+cellular carcinoma screening in patients with compens ated hepatitis C virus (HCV)-related cirrhosi s
+aware of their HCV status improves survival: A modeling approac h. Hepatolog y [Interne t]. 2014 [cited
+2021 Jul 9]; 59(4):1471 –81. Available from: https://aas ldpubs.onlinel ibrary.wil ey.com/doi/ abs/ https://
+doi.org/10.10 02/hep.26944 PMID: 246771 95
+40. Agence de biome ´ decine. Rapport annuel 2019 [Internet]. Agence de biome ´ decine; 2019 [cited 2021 Jul
+9]. Availab le from: https://ram s.agence- biomedeci ne.fr/greffe-h epatique-0
+41. van der Meer AJ, Veldt BJ, Feld JJ, Wedemeyer H, Dufour JF, Lammert F, et al. Association Between
+Sustaine d Virological Response and All-Cause Mortality Among Patient s With Chronic Hepatitis C and
+Advanced Hepatic Fibrosis. JAMA [Internet]. 2012 Dec 26 [cited 2021 Jul 28]; 308(24):25 84. Availab le
+from: http://jama.ja manetwork .com/article.as px?doi=10.1 001/jama .2012.1448 78 PMID: 23268517
+42. Bourlière M, Gordon SC, Flamm SL, Cooper CL, Ramji A, Tong M, et al. Sofosbuvi r, Velpatas vir, and
+Voxilaprev ir for Previous ly Treated HCV Infection. N Engl J Med [Internet] . 2017 Jun [cited 2021 Jul 28];
+376(22):21 34–46. Availab le from: http://w ww.nejm.o rg/doi/10.105 6/NEJM oa1613512 PMID: 285645 69
+43. Pol S, Chevalier J, Branchou x S, Perry R, Milligan G, Gaudin AF. Pol S, Chevalier J, Branchoux S,
+Perry R, Milligan G, Gaudin A-F. Health related quality of life and utility values in chronic hepatiti s C
+patients: A cross-sectiona l study in France, the Uk and Germany (P0747). J Hepatol 2015; 62:S606. J
+Hepatol 2015;62:S606 [Interne t]. 2015; Available from: https:// linkinghub.else vier.com/retr ieve/pii/
+S016882781 530950 8
+44. Actes de biologie me ´ dicale— Biol’AM—en 2020 | L’Assura nce Maladie [Internet]. [cited 2021 Jul 27].
+Available from: https://ass urance-ma ladie.ameli.fr/et udes-et-donn ees/actes -biologie-m edicale-biol am-
+2020
+45. Fiche info—MAVIR ET 100 mg/40 mg, comprim e ´ pellicule ´ - Base de donne ´ es publique des me ´ dica-
+ments [Internet ]. [cited 2021 Jul 28]. Availab le from: https://bas e-donnees-p ublique.m edicaments. gouv.
+fr/extrait .php?speci d=630521 24
+46. Fiche info—EPCLU SA 400 mg/100 mg, comprime ´ pellicul e ´ - Base de donne ´ es publiqu e des me ´ dica-
+ments [Internet ]. [cited 2021 Jul 28]. Availab le from: https://bas e-donnees-p ublique.m edicaments. gouv.
+fr/extrait .php?speci d=634346 86
+47. Bundle N, Balasegaram S, Parry S, Ullah S, Harris RJ, Ahmad K, et al. Seroprev alence and demo-
+graphic factors associate d with hepatiti s B, hepatitis C and HIV infection from a hospital emergency
+departme nt testing program me, London , United Kingdom, 2015 to 2016. Eurosurveill ance [Internet].
+2019; 24(27). Available from: https://www .scopus. com/inward/r ecord.uri?ei d=2-s2.0-
+85069320052 &doi=10.2 807%2 f1560-7917.E S.2019. 24.27.1800377 &partnerID =40&md5=
+5af11899c beb94c34 fef43de09db68 de PMID: 31290390
+48. Simoncin i GM, Oyola-Jim enez J, Singleton D, Volgraf J, Ramsey FV, Goldberg A. HIV and HCV
+screening among trauma patients. International Journal of STD and AIDS [Internet] . 2019; 30(7):663–
+70. Available from: https://www .scopus. com/inward/r ecord.uri?ei d=2-s2.0-8 506420 8784&doi=10.
+1177%2f 09564624198 29590&par tnerID= 40&md5=30 75bf0b47da99 02830a bea843d533fb PMID:
+30961465
+49. Hsu DG, Taelman K, Calow N, Manns C, Newbold-Tho mpson C, Nevel A, et al. 157 Initial Outcomes of
+Universal HIV and HCV Screening in a High Volume Academic Emerge ncy Departm ent. Ann Emerg
+Med. 2020; 76(4 Supplement ):S61.
+50. Chechi T, Tran N, Waldman S, Sage AC, May LS. Integrating HIV and hepatitis c screening in a high-
+risk emerge ncy department popula tion. Open Forum Infect Dis. 2019; 6(Supplemen t 2):S466.
+51. Calner P, Sperring H, Ruiz-Mercado G, Miller NS, Andry C, Battisti L, et al. HCV screening , linkage to
+care, and treatment pattern s at different sites across one academic medical center. PLoS ONE [Inter-
+net]. 2019; 14(7):e021 8388. Available from: https://dx .plos.org/10. 1371/journa l.pone.021838 8 PMID:
+31291275
+PLOS GLOB AL PUBLIC  HEALTH
+Cost-utility of hepatitis C testing in emergenc y departme nts in France
+PLOS Global Public Health | https:/ /doi.org/10.13 71/journal.p gph.000 1559 February 23, 2023 18 / 19
+
+--- PAGE 19 ---
+
+52. Orkin C, Jeffery-Smi th A, Foster GR, Tong CYW. Retrospe ctive hepatiti s C seroprevalenc e screening
+in the antenata l setting-sho uld we be screening antenatal wome n?. BMJ Open. 2016; 6(5):e0106 61.
+https://doi.or g/10.113 6/bmjope n-2015-010 661 PMID: 27231001
+53. Thein HH, Yi Q, Dore GJ, Krahn MD. Estimation of stage-spe cific fibrosis progression rates in chronic
+hepatitis C virus infection: A meta-ana lysis and meta-re gression. Hepatolog y [Internet]. 2008 [cited
+2021 Jul 9]; 48(2):418– 31. Available from: https://aas ldpubs.onlinel ibrary.wil ey.com/doi/ abs/10.100 2/
+hep.22375 PMID: 18563841
+54. Andrade LF, Ludwig K, Goni JMR, Oppe M, de Pouvourv ille G. A French Value Set for the EQ-5D-5L.
+Pharmac oEconomi cs [Interne t]. 2020 Apr [cited 2021 Jul 14]; 38(4):413 –25. Available from: http://link.
+springer.c om/10.100 7/s40273-019- 00876-4 PMID: 31912325
+55. Parry S, Bundle N, Ullah S, Foster GR, Ahmad K, Tong CYW, et al. Implementin g routine blood-bor ne
+virus testing for HCV, HBV and HIV at a London Emergenc y Department— uncoverin g the iceberg ?.
+Epidemiol Infect [Interne t]. 2018; 146(8):102 6–35. Available from: https://www .cambridge. org/core/
+product/i dentifier/S09 50268818000 870/type/jo urnal_artic le https://doi.or g/10.1017/
+S095026881 800087 0 PMID: 29661260
+56. UNCAM. Convent ion nationale organisant les rapports entre les me ´ decins libe ´ raux et l’Assurance Mala-
+die signe ´ e en 2016. 2016.
+57. Assurance maladie . Base de me ´ dicaments et d’inform ations tarifaires—M ARIVET [Internet]. 2021
+[cited 2021 Jul 12]. Availab le from: http://w ww.codag e.ext.cnamt s.fr/codif/bdm_i t//fiche/ index_fic_
+medisoc.ph p?p_code_c ip=340093 0108765&p_ site=AMELI
+58. Assurance maladie . Base de me ´ dicaments et d’inform ations tarifaires—E PCLU SA [Interne t]. 2021
+[cited 2021 Jul 12]. Availab le from: http://w ww.codag e.ext.cnamt s.fr/codif/bdm_i t//fiche/ index_fic_
+medisoc.ph p?p_code_c ip=340093 0214732&p_ site=AMELI
+59. Se ´ ries Indices des prix à la consomm ation | Insee [Interne t]. [cited 2021 Jul 12]. Available from: https://
+www.insee. fr/fr/statistiqu es/series/10 234221 3?MENAGES _IPC=2 330043&NAT URE=
+2318727&P RIX_CON SO=24091 26
+60. GDP per capita (current LCU)—Fran ce | Data [Interne t]. [cited 2021 Jul 20]. Availab le from: https:// data.
+worldba nk.org/indica tor/NY.GDP .PCAP.CN ?locations =FR
+61. Woods B, Revill P, Sculpher M, Claxto n K. Country-L evel Cost-Effec tiveness Thresholds : Initial Esti-
+mates and the Need for Further Research. Value in Health [Interne t]. 2016 Dec [cited 2021 Jul 19]; 19
+(8):929–35 . Available from: https://linking hub.elsevie r.com/retriev e/pii/S10983 015160006 44 https://doi.
+org/10.1016/ j.jval.2016.02 .017 PMID: 27987642
+62. World Developm ent Indicator s | DataBank [Internet ]. [cited 2021 Jul 20]. Availab le from: https://
+databank .worldbank .org/reports.a spx?source= 2&series=N Y.GDP.PC AP.CD
+63. Meffre C, Strat YL, Delarocqu e-Astag neau E, Dubois F, Antona D, Lemass on JM, et al. Prevalence of
+hepatitis B and hepatitis C virus infections in France in 2004: Social factors are importan t predictors
+after adjusting for known risk factors. Journal of Medical Virology [Internet]. 2010 [cited 2021 Jul 15]; 82
+(4):546–55 . Available from: https://onlin elibrary.w iley.com/do i/abs/10.10 02/jmv.2173 4 PMID:
+20166185
+64. Brouard C, Le Strat Y, Larsen C, Jauffret-Rou stide M, Lot F, Pillonel J. The Undiagno sed Chronical ly-
+Infected HCV Population in France. Implications for Expand ed Testing Recommen dations in 2014. Villa
+E, editor. PLoS ONE [Interne t]. 2015 May 11 [cited 2021 Jul 15]; 10(5):e012 6920. Available from:
+https://dx .plos.org/10. 1371/journa l.pone.012692 0 PMID: 25961575
+65. Marie Jauffret- Roustide M, Josiane Pillonel J, Weill-Barillet L. Estimation of HIV and hepatitis C preva-
+lence among drug users in France— First results from the ANRS-Coqu elicot 2011 Survey. BEH [Inter-
+net]. 2013; Available from: http://beh.san tepubliquef rance.fr/beh/2 013/39-40/pd f/2013_3 9-40_2.pdf
+66. DREES. Urgences: plus du quart des passages concernen t les enfants de moins de 15 ans [Interne t].
+DREES; 2019. Availab le from: https://dree s.solidari tes-sante.go uv.fr/sites /default/fi les/er1128.pdf
+67. Costella A, Craine N, Goldberg D, Harris H, Hutchins on S. Hepatitis C in the UK, 2018 report—W orking
+to eliminate hepatitis C as a major public health threat [Interne t]. Public Health England; 2018 Aug.
+Available from: http://hcvac tion.org.uk /sites/default/fi les/resour ces/HCV_IN _THE_UK_20 18_UK.pd f
+68. European Centre for Disease Prevention and Control. Public health guidance on HIV, hepatitis B and C
+testing in the EU/EEA: an integra ted approach. [Interne t]. Publicat ions Office; 2018 [cited 2021 Apr 27].
+Available from: https://data.eu ropa.eu/doi/1 0.2900/7 9127
+69. Hopkins MJ, Todd S, Beadswor th M, Anders on C, Mohamed Z, Muir D, et al. Consiste nt high preva-
+lence of undiagnosed blood-bor ne virus infection in patients attending large urban emerge ncy depart -
+ments in England. J Viral Hepat [Internet ]. 2020 Jan [cited 2022 Dec 12]; 27(1):88–9 1. Available from:
+https://onlin elibrary.w iley.com/doi/ 10.1111/jvh. 13197 PMID: 31448490
+PLOS GLOB AL PUBLIC  HEALTH
+Cost-utility of hepatitis C testing in emergenc y departme nts in France
+PLOS Global Public Health | https:/ /doi.org/10.13 71/journal.p gph.000 1559 February 23, 2023 19 / 19
